@@ -42,10 +42,10 @@ const MapPage = () => {
 
             <Card className="flex-1 overflow-hidden border-2 border-slate-800 relative z-0">
                 <MapContainer center={center} zoom={14} scrollWheelZoom={true} style={{ height: '100%', width: '100%' }}>
-                    {/* Dark Mode Tiles */}
+                    {/* OpenStreetMap / ESRI Satellite Tiles (Sans clé requise) */}
                     <TileLayer
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
 
                     {markers.map((marker) => (
